@@ -1,0 +1,168 @@
+::selection {
+  background: #d0d0d0;
+  color: green;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #edeef0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  max-width: 1020px;
+  margin: auto;
+  display: flex;
+}
+
+header {
+  margin-bottom: 5px;
+  background-color: #507299;
+  padding-top: 10px;
+  padding-bottom: 3px;
+}
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: white;
+  color: #e1e5eb;
+  clear: both;
+}
+
+p {
+  background-color: #edeef0;
+}
+
+ul {
+  list-style: none;
+  color: white;
+}
+
+li {
+  padding:10px;
+  margin-right:40px;
+  margin-bottom: 10px;
+}
+
+li > a {
+  text-decoration: none;
+  color: #507299;
+}
+
+aside {
+  float: left;
+  width: 280px;
+}
+
+.logo {
+  position: relative;
+  left: 15%;
+}
+
+.content {
+  margin-top: 10px;
+  width: 470px;
+  display: flow;
+}
+
+.fixed-content {
+  width: 190px;
+  position: fixed;
+  right: 400px;
+}
+
+#block1,
+#block2 {
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+@media (max-width: 1700px) {
+  .fixed-content {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .content {
+    margin: auto;
+  }
+  main {
+    display: block;
+  }
+
+  aside {
+    margin: auto;
+    width: 470px;
+    float: none;
+  }
+  li {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  ul {
+    margin-left: -40px;
+    text-align: center;
+  }
+}
+
+.block {
+  text-align: justify;
+  padding: 20px;
+  border: solid 1px #d0d0d0;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.header-block {
+  font-weight: bold;
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+.block > .header-block {
+  padding-bottom: 10px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: solid 3px #d0d0d0;
+}
+
+.buttons {
+  color: #507299;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: solid 3px #d0d0d0;
+  padding-bottom: 10px;
+}
+
+.like {
+  float: left;
+}
+
+.comment {
+  float: right;
+}
+
+.col {
+  color: #edeef0;
+  color: green;
+  color: #e1e5eb;
+  color: #507299;
+  color: #2e5473;
+  color: #d0d0d0;
+}
+
+
+li:hover {
+  background-color: #e1e5eb;
+}
